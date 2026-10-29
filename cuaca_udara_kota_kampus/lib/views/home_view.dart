@@ -101,8 +101,8 @@ class _HomeViewState extends State<HomeView> {
                     const SizedBox(height: 28),
                     const SectionHeading(
                       icon: Icons.wb_sunny_rounded,
-                      title: 'Cuaca kampus',
-                      subtitle: 'Kondisi terkini di kota pilihanmu',
+                      title: 'Langit Hari Ini',
+                      subtitle: 'Kondisi cuaca terkini di kota pilihanmu',
                     ),
                     const SizedBox(height: 14),
                     if (vm.isLoading && vm.weather == null)
@@ -202,7 +202,7 @@ class _HomeViewState extends State<HomeView> {
                     const SizedBox(height: 22),
                     Center(
                       child: Text(
-                        'Dibuat untuk kehidupan kampus 💚',
+                        'Dibuat untuk kehidupan Indonesia 💚',
                         style: TextStyle(
                           fontSize: 12,
                           color: p.textSecondary,
@@ -262,7 +262,7 @@ class _Header extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Udara Kampus',
+                'Kabar Langit',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(

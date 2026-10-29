@@ -69,7 +69,7 @@ class CampusIllustration extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: Text(
-                  'Kampusmu, udaramu 🌿',
+                  'Kotamu, udaramu 🌿',
                   style: TextStyle(
                     color: p.textPrimary,
                     fontSize: 12,
@@ -196,7 +196,7 @@ class _CampusScene extends StatelessWidget {
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
                         child: Text(
-                          'UNIVERSITAS  •  CAMPUS',
+                          'UNIVERSITY TOWN',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 10,

@@ -36,7 +36,7 @@ class UdaraKampusApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeController = context.watch<AppThemeController>();
     return MaterialApp(
-      title: 'Udara Kampus',
+      title: 'cuaca_udara_kota_kampus',
       debugShowCheckedModeBanner: false,
       themeMode: themeController.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       theme: buildAppTheme(Brightness.light),

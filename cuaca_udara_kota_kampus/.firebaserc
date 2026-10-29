@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "cuaca-udara-kampus"
+  },
+  "targets": {
+    "cuaca-udara-kampus": {
+      "hosting": {
+        "kabarlangit": [
+          "kabarlangit"
+        ],
+        "cuaca-lama": [
+          "cuaca-udara-kampus"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

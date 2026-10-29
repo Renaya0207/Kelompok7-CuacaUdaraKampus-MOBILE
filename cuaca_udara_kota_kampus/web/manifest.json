@@ -1,6 +1,6 @@
 {
-    "name": "udara_kampus",
-    "short_name": "udara_kampus",
+    "name": "cuaca_udara_kota_kampus",
+    "short_name": "cuaca_udara_kota_kampus",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
