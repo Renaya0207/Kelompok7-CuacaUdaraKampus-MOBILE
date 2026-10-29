@@ -1,4 +1,4 @@
-# 🌿 Cuaca Udara Kota Kampus
+# 🌿 KabarLangit - Cuaca Udara Kota Kampus
 
 Aplikasi Flutter pemantau **cuaca dan kualitas udara** yang fokus utamanya adalah untuk delapan kota kampus di Indonesia.
 Dibuat berdasarkan *Studi Kasus 13: Cuaca Kampus*, dengan tambahan **Open-Meteo Air Quality API**.
@@ -28,12 +28,12 @@ Dibuat berdasarkan *Studi Kasus 13: Cuaca Kampus*, dengan tambahan **Open-Meteo 
 Pindai QR di bawah dengan kamera HP untuk membuka versi web aplikasi, tanpa perlu memasang apa pun.
 
 <p align="center">
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=10&data=https://cuaca-udara-kampus.web.app" alt="QR Code Udara Kampus" width="240">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=10&data=https%3A%2F%2Fkabarlangit.web.app" alt="QR Code KabarLangit" width="240">
   <br>
-  <a href="https://cuaca-udara-kampus.web.app">https://https://cuaca-udara-kampus.web.app/</a>
+  <a href="https://kabarlangit.web.app">https://kabarlangit.web.app</a>
 </p>
 
-## 🌐 Sumber data
+## Sumber data
 
 [Open-Meteo](https://open-meteo.com/) (gratis, tanpa API key). Dua permintaan dijalankan **bersamaan** untuk setiap kota:
 
@@ -117,14 +117,6 @@ flutter run -d chrome            # atau pilih perangkat Android
 > Membuat APK: `flutter build apk --release`
 > (hasil: `build/app/outputs/flutter-apk/app-release.apk`)
 
-### 🌍 Menayangkan versi web (GitHub Pages)
-
-Berkas `.github/workflows/deploy-web.yml` membangun dan menayangkan versi web otomatis setiap *push* ke cabang `main`.
-
-1. Di GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. *Push* ke `main`, lalu tunggu proses di tab **Actions** selesai (sekitar 3–5 menit).
-3. Aplikasi terbuka di `https://renaya0207.github.io/Kelompok7-CuacaUdaraKampus-MOBILE/`. 
-
 ## Pengujian
 
 ```bash
@@ -148,22 +140,22 @@ cuaca + prakiraan tujuh hari terbaca, kualitas udara terbaca, dan **cuaca tetap 
 
 | Mode terang | Mode gelap | Gagal terhubung (Galat) |
 |:---:|:---:|:---:|
-| <img width="250" alt="Mode terang" src="https://github.com/user-attachments/assets/9880f6ab-eaa5-4487-8ed3-f4aff2d9187f" /> | <img width="250" alt="Mode gelap" src="https://github.com/user-attachments/assets/5d1aeadf-39db-4b77-b058-6c62bf41d100" /> | <img width="250" alt="Gagal terhubung" src="https://github.com/user-attachments/assets/e104fcb0-dcff-4e5d-91c6-f04366f697e9" /> |
+| <img width="250" alt="Mode terang" src="https://github.com/user-attachments/assets/e3ad9089-aa38-4b0d-b406-ba9699b71479" /> | <img width="250" alt="Mode gelap" src="https://github.com/user-attachments/assets/bdf9fb0c-2219-4842-9dd6-0e9439c24e69" /> | <img width="250" alt="Gagal terhubung" src="https://github.com/user-attachments/assets/ca91cbc9-572b-4119-ba94-9cb62d3ee8bd" /> |
 
 | Kualitas udara | Prakiraan 7 hari | Jelajah kota |
 |:---:|:---:|:---:|
-| <img width="250" alt="Kualitas udara" src="https://github.com/user-attachments/assets/4dbe4048-69fa-4519-9082-f12681a52e50" /> | <img width="250" alt="Prakiraan 7 hari" src="https://github.com/user-attachments/assets/4adf1feb-6a09-42fb-9bc9-1176ba66c535" /> | <img width="250" alt="Pilihan kota" src="https://github.com/user-attachments/assets/da154d5c-cb9a-456f-893d-2cde3834c9ca" /> |
+| <img width="250" alt="Kualitas udara" src="https://github.com/user-attachments/assets/b1e8626a-63da-45eb-8808-2ae8c81f357c" /> | <img width="250" alt="Prakiraan 7 hari" src="https://github.com/user-attachments/assets/eacbc38a-7e02-49da-bcb6-2d87908665e5" /> | <img width="250" alt="Jelajah kota" src="https://github.com/user-attachments/assets/cbf685ff-5466-4979-99a6-55ee35702434" /> |
 
 ## Kesimpulan
 
-Cuaca-Udara Kota Kampus adalah aplikasi mobile berbasis Flutter yang membantu mahasiswa mengetahui cuaca dan kualitas udara di kota kampusnya dalam satu layar, sebelum berangkat atau beraktivitas di luar ruangan.
+**KabarLangit** adalah aplikasi mobile berbasis Flutter yang membantu mahasiswa mengetahui cuaca dan kualitas udara di kota kampusnya dalam satu layar, sebelum berangkat atau beraktivitas di luar ruangan.
 
-Mudah dipakai: pengguna cukup memilih salah satu dari delapan kota kampus, lalu langsung melihat suhu, kondisi cuaca, kelembapan, kecepatan angin, peluang hujan, dan prakiraan tujuh hari.
-Informasi udara yang mudah dipahami: angka US AQI diterjemahkan menjadi kategori (Baik sampai Berbahaya) dengan warna dan saran kesehatan, lengkap dengan kadar PM2.5, PM10, O₃, NO₂, SO₂, dan CO. Pengguna bisa tahu apakah aman berolahraga, bersepeda, atau berjalan kaki ke kampus.
-Data terkini dan gratis: seluruh data diambil langsung dari Open-Meteo tanpa API key, dan bisa disegarkan kapan saja dengan menarik layar ke bawah.
-Nyaman di berbagai kondisi: tersedia mode terang dan gelap, tampilan menyesuaikan lebar layar HP maupun browser, dan saat internet bermasalah aplikasi menampilkan pesan yang ramah beserta tombol Coba lagi.
-Bisa dicoba siapa saja: aplikasi dapat dibuka dari HP lewat QR tanpa perlu dipasang.
+- **Mudah dipakai:** pengguna cukup memilih salah satu dari delapan kota kampus, lalu langsung melihat suhu, kondisi cuaca, kelembapan, kecepatan angin, peluang hujan, dan prakiraan tujuh hari.
+- **Informasi udara yang mudah dipahami:** angka US AQI diterjemahkan menjadi kategori (Baik sampai Berbahaya) dengan warna dan saran kesehatan, lengkap dengan kadar PM2.5, PM10, O₃, NO₂, SO₂, dan CO. Pengguna bisa tahu apakah aman berolahraga, bersepeda, atau berjalan kaki ke kampus.
+- **Data terkini dan gratis:** seluruh data diambil langsung dari Open-Meteo tanpa API key, dan bisa disegarkan kapan saja dengan menarik layar ke bawah.
+- **Nyaman di berbagai kondisi:** tersedia mode terang dan gelap, tampilan menyesuaikan lebar layar HP maupun browser, dan saat internet bermasalah aplikasi menampilkan pesan yang ramah beserta tombol **Coba lagi**.
+- **Bisa dicoba siapa saja:** aplikasi dapat dibuka dari HP lewat QR tanpa perlu dipasang.
 
-Keterbatasan: aplikasi membutuhkan internet dan hanya bergantung pada satu penyedia data. Lokasi yang dipakai adalah titik pusat kota, jadi angkanya adalah perkiraan model, bukan pengukuran langsung di area kampus.
+**Keterbatasan:** aplikasi membutuhkan internet dan hanya bergantung pada satu penyedia data. Lokasi yang dipakai adalah titik pusat kota, jadi angkanya adalah perkiraan model, bukan pengukuran langsung di area kampus.
 
-Pengembangan selanjutnya: prakiraan AQI per hari, menyimpan kota terakhir yang dipilih, lokasi otomatis lewat GPS, dan notifikasi saat udara tidak sehat.
+**Pengembangan selanjutnya:** prakiraan AQI per hari, menyimpan kota terakhir yang dipilih, lokasi otomatis lewat GPS, dan notifikasi saat udara tidak sehat.
